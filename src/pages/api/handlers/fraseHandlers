@@ -1,0 +1,11 @@
+import { frasesMotivacionales } from "../../../db"
+
+
+export async function getFraseById(id){
+  if(!id){
+    throw Error("No se ha pasado la id")
+  }else{
+    const frase = frasesMotivacionales.find(f => f.id == id)
+    return frase
+  }
+}
