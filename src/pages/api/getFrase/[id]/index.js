@@ -1,4 +1,5 @@
-import { getFraseById } from "./handlers/fraseHandlers"
+import { getFraseById } from "../../handlers/fraseHandlers"
+
 
 export default async function getFraseRoute(req, res) {
     const {id} = req.query
